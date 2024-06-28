@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Initialize Porter Stemmer
 ps = PorterStemmer()
-
+nltk.download('punkt')
 # Function to preprocess text
 def transform_text(text):
     text = text.lower()
